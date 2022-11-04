@@ -1,0 +1,34 @@
+.articlesSection {
+    padding-bottom: 285px;
+
+    @media only screen and (max-width: $query-xl) {
+        padding-bottom: 200px;
+    }
+
+    @media only screen and (max-width: $query-l) {
+        padding-bottom: 160px;
+    }
+
+    @media only screen and (max-width: $query-m) {
+        padding-bottom: 100px;
+    }
+
+    &__title {
+        font-weight: 200;
+        text-transform: uppercase;
+        font-size: 38px;
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+        
+        @media only screen and (max-width: $query-l) {
+            grid-template-columns: calc(100% / 2) calc(100% / 2);
+        }
+
+        @media only screen and (max-width: $query-sm) {
+            grid-template-columns: 100%;
+        }
+    }
+}
