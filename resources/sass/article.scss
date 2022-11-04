@@ -1,0 +1,150 @@
+.article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    border-radius: 70px;
+    background-color: $color-primary-shadow;
+
+    @media only screen and (max-width: $query-xl) {
+        padding: 30px;
+        border-radius: 50px;
+    }
+
+    @media only screen and (max-width: $query-ml) {
+        padding: 20px;
+        border-radius: 40px;
+    }
+
+    &__textWrap {
+        flex: 1;
+        width: 100%;
+        background-color: $color-primary-light;
+        padding: 30px;
+        
+        @media only screen and (max-width: $query-m) {
+            padding: 16px;
+        }
+    }
+
+    &__title {
+        text-transform: uppercase;
+        font-size: 38px;
+        font-weight: 400;
+        
+        @media only screen and (max-width: $query-xl) {
+            font-size: 28px;
+        }
+
+        @media only screen and (max-width: $query-l) {
+            font-size: 26px;
+        }
+        
+        @media only screen and (max-width: $query-m) {
+            font-size: 22px;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__desc {
+        font-size: 28px;
+        font-weight: 300;
+
+        @media only screen and (max-width: $query-xl) {
+            font-size: 26px;
+        }
+
+        @media only screen and (max-width: $query-l) {
+            font-size: 24px;
+        }
+
+        @media only screen and (max-width: $query-ml) {
+            font-size: 18px;
+        }
+
+        @media only screen and (max-width: $query-m) {
+            font-size: 16px;
+        }
+    }
+
+    &__imgWrap {
+        width: 100%;
+        height: 393px;
+        display: block;
+        position: relative;
+        overflow: hidden;
+
+        @media only screen and (max-width: $query-xl) {
+            height: 280px;
+        }
+
+        @media only screen and (max-width: $query-l) {
+            height: 320px;
+        }
+        
+        @media only screen and (max-width: $query-ml) {
+            height: 29vw;
+        }
+
+        @media only screen and (max-width: $query-sm) {
+            height: 52vw;
+        }
+
+        &__img {
+            vertical-align: bottom;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: scale(1);
+            transition: all 0.4s ease-out;
+        }
+
+        &:hover &__img {
+            transform: scale(1.2);
+            transition: all 0.4s ease-out;
+        }
+
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            right: 20px;
+            bottom: 20px;
+            z-index: 3;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.4s ease-out;
+
+            @media only screen and (max-width: $query-ml) {
+                left: 14px;
+                top: 14px;
+                right: 14px;
+                bottom: 14px;
+            }
+        }
+
+        &:hover:after {
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            top: 10px;
+            border-color: rgba(255, 255, 255, 0);
+            transition: all 0.4s ease-out;
+
+            @media only screen and (max-width: $query-ml) {
+                left: 8px;
+                top: 8px;
+                right: 8px;
+                bottom: 8px;
+            }
+        }
+    }
+}
