@@ -1,0 +1,100 @@
+.mainMenu {
+    background-color: $color-primary;
+    margin: 0 15px;
+
+    @media only screen and (max-width: $query-m) {
+        margin: 0;
+    }
+
+    &__burgerBtn {
+        display: none;
+        padding: 20px;
+        width: fit-content;
+        text-transform: uppercase;
+        margin-left: auto;
+        background-color: $color-primary-light;
+
+        /*&:hover {
+            background-color: $color-primary-light-hover;
+        }*/
+        
+        @media only screen and (max-width: $query-m) {
+            display: block;
+        }
+    }
+    
+
+    &__group {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        list-style: none;
+
+        @media only screen and (max-width: $query-ml) {
+            justify-content: center;
+        }
+
+        @media only screen and (max-width: $query-m) {
+            display: none;
+            flex-direction: column;
+            margin: 0 calc($ofset-container-padding * -1);
+        }
+
+        &--open {
+
+            @media only screen and (max-width: $query-m) {
+                display: flex;
+            }
+        }
+    }
+
+    &__item {
+        
+        @media only screen and (max-width: $query-m) {
+            width: 100%;
+        }
+
+        &__link {
+            color: $color-text;
+            background-color: $color-primary;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            height: 134px;
+            font-weight: 300;
+            padding: 0 37px;
+            transition: all 0.3s ease-out;
+            font-size: 32px;
+            
+            @media only screen and (max-width: $query-l) {
+                height: 110px;
+                font-size: 26px;
+            }
+
+            @media only screen and (max-width: $query-ml) {
+                height: 90px;
+                font-size: 20px;
+            }
+
+            @media only screen and (max-width: $query-m) {
+                height: auto;
+                min-height: 70px;
+                background-color: $color-primary-light;
+                border-top: 1px solid $color-primary-light-hover;
+                padding: 0 $ofset-container-padding;
+            }
+
+            &:hover {
+                background-color: $color-primary-hover;
+
+                @media only screen and (max-width: $query-m) {
+                    border-top: $color-primary-light-hover;
+                }
+            }
+        }
+    }
+}
