@@ -1,0 +1,14 @@
+.header {
+    background-color: $color-primary-shadow;
+    padding-bottom: 50px;
+    border-radius: 0 0 74px 74px / 0 0 24px 24px;
+    
+    @media only screen and (max-width: $query-ml) {
+        padding-bottom: 40px;
+    }
+    
+    @media only screen and (max-width: $query-m) {
+        padding-bottom: 20px;
+        border-radius: 0;
+    }
+}
