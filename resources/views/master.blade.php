@@ -32,11 +32,15 @@
     </head>
 	<body class="body" id="body">
 
+		@include('header')
+
         <main id="main" class="main">
             <div class="container">
                 
             </div>
         </main>
+
+        @include('footer')
 
         <!-- JS -->
 		<script src="{{ URL::asset('assets/js/main.js') }}"></script>
