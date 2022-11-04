@@ -10,7 +10,7 @@ Přejděte do nově vytvořeného adresáře Laravel projektu _example-web_ a od
 
 
 ### 3. krok - nahraďte package.json
-Nahraďte původní package.json souborem package.json z tohot repozitáře.
+Nahraďte původní package.json souborem package.json z tohoto repozitáře.
   
 
 ### 4. krok - nastavte se v terminálu do adresáře Laravel projektu _example-web_
