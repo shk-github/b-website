@@ -19,7 +19,6 @@ yarn-error.log
 /bootstrap
 /config
 /database
-/public
 /storage
 /tests
 .editorconfig
