@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-	<head>
+    <head>
         <title>@yield('title', config('app.name').' - website test')</title>
         <meta charset="UTF-8">
 
@@ -30,9 +30,9 @@
         <link rel="stylesheet" href="{{ URL::asset('assets/css/style.css?v=0.001') }}">
 
     </head>
-	<body class="body" id="body">
+    <body class="body" id="body">
 
-		@include('header')
+        @include('header')
 
         <main id="main" class="main">
             <div class="container">
@@ -43,7 +43,7 @@
         @include('footer')
 
         <!-- JS -->
-		<script src="{{ URL::asset('assets/js/main.js') }}"></script>
+        <script src="{{ URL::asset('assets/js/main.js') }}"></script>
 
-	</body>
+    </body>
 </html>
