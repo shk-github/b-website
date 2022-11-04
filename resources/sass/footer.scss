@@ -1,0 +1,26 @@
+.footer {
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 200px;
+
+        @media only screen and (max-width: $query-ml) {
+            height: 120px;
+        }
+
+        @media only screen and (max-width: $query-sm) {
+            height: 80px;
+        }
+    }
+
+    &__copyright {
+        font-size: 28px;
+        
+        @media only screen and (max-width: $query-m) {
+            font-size: 18px;
+        }
+    }
+}
