@@ -1,0 +1,33 @@
+/* Fonts - family */
+$font-roboto:                   'Roboto', sans-serif;
+
+/* Offsets */
+$ofset-container-padding:       20px;
+
+
+/* Background */
+$color-background:              #333;
+
+/* Borders */
+
+
+/* Colors */
+$color-primary:                 #1f464d;
+$color-primary-hover:           darken($color-primary, 2%);    // #15373e;
+$color-primary-shadow:          rgb(54 151 167 / 6%);
+
+$color-primary-light:           #3697a7;
+$color-primary-light-hover:     darken($color-primary-light, 20%);   //#186672;
+
+$color-text:                    #fff;
+
+
+/* Media Query breakpoints */
+$query-s:				        460px;
+$query-sm:				        560px;
+$query-m:				        768px;
+$query-ml:				        992px;
+$query-l:				        1300px;
+$query-xl:			            1600px;
+$query-xxl:			            2090px;
+

@@ -1,0 +1,25 @@
+/* Container */
+.container {
+    max-width: $query-xxl;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: $ofset-container-padding;
+    padding-right: $ofset-container-padding;
+
+    @media only screen and (max-width: $query-xxl) {
+        max-width: $query-xl;
+    }
+
+    @media only screen and (max-width: $query-xl) {
+        max-width: $query-l;
+    }
+
+    @media only screen and (max-width: $query-l) {
+        max-width: $query-ml;
+    }
+
+    @media only screen and (max-width: $query-ml) {
+        max-width: 100%;
+    }
+
+}
