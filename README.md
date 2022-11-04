@@ -26,7 +26,7 @@ npm install
   
 
 ### 6. krok - nahraďte původní soubory Laravelu za soubory z tohoto repozitáře
-Soubory můžete stáhnout pomocí příkazu:
+Soubory můžete stáhnout pomoci níže uvedeného příkazu a následně je z adresáře _gitExampleWeb_ přesunout do rootu projektu:
 ```
 git clone https://github.com/shk-github/b-website.git gitExampleWeb
 ```
