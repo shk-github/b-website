@@ -27,5 +27,6 @@ yarn-error.log
 .styleci.yml
 artisan
 composer.lock
+package-lock.json
 phpunit.xml
 server.php
